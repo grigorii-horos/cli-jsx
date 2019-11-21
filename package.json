@@ -2,6 +2,10 @@
   "name": "cli-jsx",
   "version": "1.0.1",
   "description": "Render JSX to Terminal",
+  "bugs": {
+    "url": "https://github.com/horosgrisa/cli-jsx/issues"
+  },
+  "homepage": "https://github.com/horosgrisa/jsx-html",
   "main": "index.js",
   "bin": {
     "jsx": "./bin/jsx.js"
@@ -25,6 +29,10 @@
   },
   "author": "Grigorii Horos <horosgrisa@gmail.com>",
   "license": "GPL-3.0-or-later",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/horosgrisa/cli-jsx.git"
+    },
   "keywords": [
     "html",
     "render",
