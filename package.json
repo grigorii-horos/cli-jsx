@@ -1,6 +1,6 @@
 {
   "name": "cli-jsx",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Render JSX to Terminal",
   "main": "index.js",
   "bin": {
