@@ -15,4 +15,4 @@ require("@babel/register")({
 
 const JSXVal = require(jsxFile);
 
-console.log(cliJSX(cliJSX(JSXVal.default)))
+console.log(cliHtml(cliJSX(JSXVal.default)))
