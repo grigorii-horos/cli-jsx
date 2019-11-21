@@ -1,0 +1,39 @@
+{
+  "name": "cli-jsx",
+  "version": "0.0.1",
+  "description": "Render JSX to Terminal",
+  "main": "index.js",
+  "bin": {
+    "jsx": "./bin/jsx.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.7.0",
+    "cli-html": "^1.5.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.12.0"
+  },
+  "author": "Grigorii Horos <horosgrisa@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "html",
+    "render",
+    "terminal",
+    "cli",
+    "jsx",
+    "react",
+    "jsx-to-cli",
+    "jsx-to-terminal",
+    "html-to-terminal"
+  ]
+}
