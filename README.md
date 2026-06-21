@@ -12,6 +12,10 @@ Welcome to cli-jsx
 > Supports pretty tables and syntax highlighting
 
 
+> As of v2, `cli-jsx` is a thin wrapper around [`cli-html`](https://github.com/grigorii-horos/cli-html).
+> The implementation (the `jsx` command and `renderJSX`) lives in `cli-html`;
+> this package just re-exports it. Use `cli-html` directly if you prefer.
+
 ## Install
 
 ```sh
@@ -37,12 +41,15 @@ This will produce the following:
 npm i cli-jsx
 ```
 
+`renderJSX` is async (react/react-dom are loaded lazily) and renders straight to
+the terminal:
+
 ```js
-const cliJSX = require('cli-jsx');
+import renderJSX from 'cli-jsx';
 
-const jsx = <h1>Hello World</h1>
+const App = () => <h1>Hello World</h1>;
 
-console.log(cliJSX(jsx));
+console.log(await renderJSX(<App />));
 ```
 
 ## Run tests

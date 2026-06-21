@@ -1,18 +1,3 @@
 #!/usr/bin/env node
-const path = require('path')
-const cliHtml = require('cli-html');
-const cliJSX = require('../');
-
-const jsxFile = path.resolve(process.cwd(), process.argv[2])
-const rootPath = path.dirname(jsxFile)
-
-require("@babel/register")({
-  extends: __dirname+'/../.babelrc',
-  root: rootPath,
-  only: [rootPath],
-  "compact": true
-});
-
-const JSXVal = require(jsxFile);
-
-console.log(cliHtml(cliJSX(JSXVal.default)))
+// Delegates to cli-html's jsx CLI (reads process.argv directly).
+import 'cli-html/bin/jsx.js';

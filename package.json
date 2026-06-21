@@ -1,38 +1,31 @@
 {
   "name": "cli-jsx",
-  "version": "1.2.0",
-  "description": "Render JSX to Terminal",
+  "version": "2.0.0",
+  "description": "Render JSX to Terminal (thin wrapper around cli-html)",
   "bugs": {
-    "url": "https://github.com/horosgrisa/cli-jsx/issues"
+    "url": "https://github.com/grigorii-horos/cli-jsx/issues"
   },
-  "homepage": "https://github.com/horosgrisa/jsx-html",
+  "homepage": "https://github.com/grigorii-horos/cli-jsx#readme",
   "main": "index.js",
+  "type": "module",
   "bin": {
     "jsx": "./bin/jsx.js"
   },
   "dependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/plugin-proposal-class-properties": "^7.7.0",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-react": "^7.7.0",
-    "@babel/register": "^7.7.0",
-    "cli-html": "^1.6.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "cli-html": "^6.1.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "node bin/jsx.js examples/demo.js"
   },
   "engines": {
-    "node": ">=12.0.0",
-    "npm": ">=6.12.0"
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   },
   "author": "Grigorii Horos <horosgrisa@gmail.com>",
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/horosgrisa/cli-jsx.git"
+    "url": "git+https://github.com/grigorii-horos/cli-jsx.git"
   },
   "keywords": [
     "html",

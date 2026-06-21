@@ -1,8 +1,3 @@
-var ReactDOMServer = require('react-dom/server');
-const React = require('react')
-
-const cliJSX = (jsx)=>{
-	return ReactDOMServer.renderToStaticMarkup(React.createElement(jsx, null))
-}
-
-module.exports = cliJSX
+// cli-jsx is now a thin wrapper around cli-html's renderJSX.
+// The implementation lives in cli-html; this package keeps the name on npm.
+export { renderJSX, renderJSX as default } from 'cli-html';
